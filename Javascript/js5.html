@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scope and conditionals in JS</title>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>item-1</li>
+            <li>item-2</li>
+            <li>item-3</li>
+            <li>item-4</li>
+            <li>item-5</li>
+            <li>item-6</li>
+            <li>item-7</li>
+            <li>item-8</li>
+        </ul>
+    </div>
+    <script>
+        let a='u';
+        {
+            let a='u1';
+            console.log(a);
+        }
+        console.log(a);
+        const b = 'this cannot be changed'; // const implies that its value will never change 
+        
+        let age = 23;
+        if (age>18)
+        console.log("You can drink alcohol");
+        else
+        console.log("You cannot drink alcohol.");
+
+        const cups = 10;
+        switch(cups){
+            case 4:
+                console.log("The value of cups is 4.");
+                break;
+            case 41:
+                console.log("The value of cups is 41");
+                break;
+            case "small":
+                console.log("The value of cups is small");
+                break;
+            case "large":
+                console.log("The value of cups is large");
+                break;
+            case a:
+                console.log("the value of cups is a");
+                break;
+            default:
+                console.log("None of the above");
+                break;
+        }
+    </script>
+</body>
+</html>

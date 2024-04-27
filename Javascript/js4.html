@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS string functions</title>
+</head>
+<body>
+    <script>
+        var str = "this is a string";
+        console.log(str);
+        var position = str.indexOf('is');
+        console.log(position);
+        position=str.lastIndexOf('is');
+        console.log(position);
+
+        // substring from  a string
+        var substr = str.slice(1,6);
+        console.log(substr);
+        substr=str.substring(1,7);
+        console.log(substr);
+        substr=str.substr(1,6);
+        console.log(substr);
+        // other string functions
+        var replaced = str.replace('string','sentence');
+        console.log(replaced);
+
+        console.log(str.toUpperCase());
+        console.log(str.toLowerCase());
+
+        var newstr = str.concat(' new string');
+        console.log(newstr);
+
+        console.log(str.trim());
+
+        var char=str.charAt(3);
+        console.log(char);
+
+        var char= str.charCodeAt(3);
+        console.log(char);
+
+        console.log(str[3]);
+    </script>
+</body>
+</html>
