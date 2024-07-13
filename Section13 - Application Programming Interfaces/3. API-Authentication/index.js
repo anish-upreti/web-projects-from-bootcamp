@@ -5,10 +5,10 @@ const app = express();
 const port = 3000;
 const API_URL = "https://secrets-api.appbrewery.com/";
 
-const yourUsername = "manish987";
-const yourPassword = "practice987";
-const yourAPIKey = "924edea5-9e5b-4c23-99bd-cc95f9d89d03";
-const yourBearerToken = "d18b61bb-b728-4416-a02c-c6017eb4a75f";
+const yourUsername = "manish987";    // Use your own credentials
+const yourPassword = "_your_password_";  // Use your own credentials
+const yourAPIKey = "_your_own_api_key_";  // Use your own credentials
+const yourBearerToken = "_your_own_bearer_token_";  // Use your own credentials
 
 app.get("/", (req, res) => {
   res.render("index.ejs", { content: "API Response." });
